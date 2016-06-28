@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>File Metadata Microservice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/css/fileMetadata.css" type="text/css">
+    </style>
+  </head>
+  <body>
+    <h1 class="title">File Metadata Microservice</h1>
+    <div class=userStories>
+      <h3>User Stories</h3>
+      <ul>
+        <li>I can submit a FormData object that includes a file upload.</li>
+        <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
+      </ul>
+    </div>
+    <br>
+    <div class="form">
+      <form action='formAction' method='post' enctype='multipart/form-data'>
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        File name: <input type="file" name="file"><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
